@@ -1,0 +1,109 @@
+/* Estilo para la sección "Acerca del Colegio" */
+#acerca-del-colegio {
+    background-color: #b7b8b6; /* Color de fondo de la sección */
+    padding: 60px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo para el título principal */
+#acerca-del-colegio h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #010000; /* Color del texto del título */
+}
+
+/* Estilo para el párrafo principal */
+#acerca-del-colegio p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #040303; /* Color del texto del párrafo */
+}
+
+/* Estilo para las columnas (historia y misión) */
+#acerca-del-colegio .col-md-6 {
+    padding: 0 20px; /* Espaciado izquierdo y derecho entre columnas */
+}
+
+/* Estilo para los títulos de historia y misión */
+#acerca-del-colegio h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #050505; /* Color del texto de los títulos */
+}
+
+/* Estilo para los párrafos de historia y misión */
+#acerca-del-colegio .col-md-6 p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #030303; /* Color del texto de los párrafos */
+}
+
+/* Estilo para la sección de visión y misión */
+#acerca-del-colegio .vision-mision {
+    text-align: center;
+}
+
+/* Estilo para los títulos de visión y misión */
+#acerca-del-colegio .vision-mision h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #060505; /* Color del texto de los títulos */
+}
+
+/* Estilo para los párrafos de visión y misión */
+#acerca-del-colegio .vision-mision p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #050505; /* Color del texto de los párrafos */
+}
+
+footer {
+    background-color: #041209;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilos para los datos de contacto */
+.footer-section p {
+    margin: 0;
+    font-size: 14px;
+}
+

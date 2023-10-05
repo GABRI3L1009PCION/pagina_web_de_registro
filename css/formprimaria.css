@@ -1,0 +1,168 @@
+body {
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+  }
+
+/* Estilo para la imagen de fondo */
+.background-image {
+    background-image: url('/imgfondos/fondo3.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 200px; /* Altura deseada para la imagen de fondo */
+    text-align: center; /* Centra el contenido dentro de la imagen de fondo */
+    position: relative; /* Para que el contenido se posicione correctamente */
+
+  }
+  
+  /* Estilo para el logo en el centro de la imagen de fondo */
+  .logo {
+    background-image: url('/imgfondos/logotadeo.png');
+    background-size: contain; /* Ajusta el tamaño del logo dentro de la imagen de fondo */
+    background-repeat: no-repeat;
+    background-position: center center; /* Centra el logo vertical y horizontalmente */
+    width: 200px; /* Ancho del logo */
+    height: 200px; /* Altura del logo */
+    position: absolute; /* Posiciona el logo en relación con la imagen de fondo */
+    top: 50%; /* Lo sitúa en la mitad vertical de la imagen de fondo */
+    left: 50%; /* Lo sitúa en la mitad horizontal de la imagen de fondo */
+    transform: translate(-50%, -50%); /* Centra el logo correctamente */
+  }
+  
+  /* Estilo para la barra de navegación */
+.navbar {
+    background-color: #063210; /* Color de fondo del navbar */
+    padding: 10px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin: 0;
+}
+
+/* Estilo para los elementos de navegación */
+.nav-item {
+    display: inline-block; /* Muestra los elementos en línea */
+    margin: 0 10px; /* Espaciado entre los elementos */
+}
+
+/* Estilo para los enlaces de navegación */
+.nav-item a {
+    text-decoration: none;
+    color: #fff; /* Color del texto de los enlaces */
+    font-size: 16px;
+    transition: color 0.3s; /* Transición de color suave en el hover */
+}
+
+/* Cambiar el color del enlace al pasar el cursor sobre él */
+.nav-item a:hover {
+    color: #ff5722; /* Color de resaltado al pasar el cursor */
+}
+
+
+body {
+    background-image: url('/imgfondos/fondo11.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    font-family: Arial, sans-serif; /* Fuente para todo el documento */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px; /* Espacio superior */
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    padding: 20px;
+    background-color: rgba(241, 173, 173, 0.442); /* Fondo semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    height: 40px; /* Ajusta la altura para elementos select */
+}
+
+textarea {
+    resize: vertical; /* Permite la redimensión vertical del textarea */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Color de fondo para el botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #041209;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilos para los datos de contacto */
+.footer-section p {
+    margin: 0;
+    font-size: 14px;
+}

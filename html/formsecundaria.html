@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Inscripción para Secundaria Básica</title>
+    <link rel="stylesheet" href="/css/formsecundaria.css">
+   
+</head>
+<body>
+
+    <header>
+        <!-- Imagen de fondo -->
+        <div class="background-image">
+            <!-- Logo en el centro de la imagen de fondo -->
+            <div class="logo"></div>
+        </div>
+        <!-- Barra de navegación debajo de la imagen -->
+        <ul class="navbar">
+            <li class="nav-item"><a href="/html/index.html">Inicio</a></li>
+            <li class="nav-item"><a href="/html/informacion.html">Acerca de Nosotros</a></li>
+            <li class="nav-item"><a href="/html/programa.html">Programas Académicos</a></li>
+            <li class="nav-item"><a href="/html/admiciones.html">Admisiones</a></li>
+            <li class="nav-item"><a href="/html/contacto.html">Contacto</a></li>
+        </ul>
+        
+    </header>
+
+    <h3>Formulario de Inscripción para Secundaria Básica</h3>
+    <form action="#" method="post" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre del Estudiante:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+
+        <label for="nombre_padre">Nombre del Padre o Tutor:</label>
+        <input type="text" id="nombre_padre" name="nombre_padre" required><br><br>
+
+        <label for="nombre_madre">Nombre de la Madre o Tutora:</label>
+        <input type="text" id="nombre_madre" name="nombre_madre" required><br><br>
+
+        <label for="telefono">Teléfono de Contacto:</label>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="direccion">Dirección de Residencia:</label>
+        <textarea id="direccion" name="direccion" rows="4" required></textarea><br><br>
+
+        <label for="grado">Grado a Inscribir:</label>
+        <select id="grado" name="grado" required>
+            <option value="primeroBasico">Primero Basico</option>
+            <option value="segundoBasico">Segundo Basico</option>
+            <option value="terceroBasico">Tercero Basico</option>
+        </select><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        function validarFormulario() {
+            var nombre = document.getElementById("nombre").value;
+            var fechaNacimiento = document.getElementById("fecha_nacimiento").value;
+            var genero = document.getElementById("genero").value;
+            var nombrePadre = document.getElementById("nombre_padre").value;
+            var nombreMadre = document.getElementById("nombre_madre").value;
+            var telefono = document.getElementById("telefono").value;
+            var correo = document.getElementById("correo").value;
+            var direccion = document.getElementById("direccion").value;
+            var grado = document.getElementById("grado").value;
+
+            // Validar que los campos no estén vacíos
+            if (nombre === "" || fechaNacimiento === "" || genero === "" || nombrePadre === "" || nombreMadre === "" || telefono === "" || correo === "" || direccion === "" || grado === "") {
+                alert("Por favor, complete todos los campos.");
+                return false;
+            }
+
+            // Puedes agregar más validaciones aquí según tus necesidades
+
+            return true; // Envía el formulario si todo está bien
+        }
+    </script>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="definit.html">Inicio</a></li>
+                    <li><a href="informacion.html">Acerca de Nosotros</a></li>
+                    <li><a href="#">Programas Académicos</a></li>
+                    <li><a href="#">Admisiones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="#">Biblioteca</a></li>
+                    <li><a href="#">Calendario Escolar</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Dirección: Calle Principal, Ciudad</p>
+                <p>Teléfono: (502) 5535-5469</p>
+                <p>Email: info@colegiosantadeo.com</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
